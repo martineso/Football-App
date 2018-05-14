@@ -10,7 +10,7 @@ router.get('/:id', function(req, res, next) {
   
     makeRequest(requestUrl)
       .then(response => res.json(response))
-      .catch(err => res.status(404));
+      .catch(err => res.status(400));
 });
 
 module.exports = router;

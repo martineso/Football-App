@@ -44,6 +44,18 @@ amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
 
+angular-messages@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/angular-messages/-/angular-messages-1.7.0.tgz#ae0ec5fec710898dbbe9f0146ca87e0649f6c3d6"
+
+angular-route@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/angular-route/-/angular-route-1.7.0.tgz#37cbe8ddb58a331624d0a33e59c17e7254854e08"
+
+angular@1.6.9:
+  version "1.6.9"
+  resolved "https://registry.yarnpkg.com/angular/-/angular-1.6.9.tgz#bc812932e18909038412d594a5990f4bb66c0619"
+
 array-flatten@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/array-flatten/-/array-flatten-1.1.1.tgz#9a5f699051b1e7073328f2a008968b64ea2955d2"

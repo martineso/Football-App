@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
   
   makeRequest(requestUrl)
     .then(response => res.json(response))
-    .catch(err => res.status(404));
+    .catch(err => res.status(400));
 });
 
 router.get('/:id/teams', function(req, res, next) {
@@ -19,7 +19,7 @@ router.get('/:id/teams', function(req, res, next) {
 
   makeRequest(requestUrl)
     .then(response => res.json(response))
-    .catch(err => res.status(404));
+    .catch(err => res.status(400));
 });
 
 router.get('/:id/table', function(req, res, next) {
@@ -27,7 +27,7 @@ router.get('/:id/table', function(req, res, next) {
 
   makeRequest(requestUrl)
     .then(response => res.json(response))
-    .catch(err => res.status(404));
+    .catch(err => res.status(400));
 });
 
 router.get('/:id/fixtures', function(req, res, next) {
@@ -35,7 +35,7 @@ router.get('/:id/fixtures', function(req, res, next) {
 
   makeRequest(requestUrl)
     .then(response => res.json(response))
-    .catch(err => res.status(404));
+    .catch(err => res.status(400));
 });
 
 module.exports = router; 

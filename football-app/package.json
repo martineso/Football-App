@@ -6,6 +6,9 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "angular": "1.6.9",
+    "angular-messages": "^1.7.0",
+    "angular-route": "^1.7.0",
     "compression": "^1.7.2",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
