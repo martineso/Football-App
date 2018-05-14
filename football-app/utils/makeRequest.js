@@ -1,5 +1,5 @@
 var request = require('request-promise');
-var API_KEY = require('../utils/constants').API_KEY;
+var API_KEY = require('../utils/config').API_KEY;
 
 function makeRequest (uri, headers = {}) {
     

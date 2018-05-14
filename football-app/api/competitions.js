@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var footballApiUrl = require('../utils/constants').FOOTBALL_API_URL;
+var footballApiUrl = require('../utils/config').FOOTBALL_API_URL;
 var path = require('path');
 var urljoin = require('url-join');
 var makeRequest = require('../utils/makeRequest');

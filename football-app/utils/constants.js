@@ -1,6 +1,0 @@
-const constants = {
-    'FOOTBALL_API_URL': 'http://api.football-data.org/v1/',
-    'API_KEY': '4fd2c0319c9043c7a411b61eb3d29096',
-}
-
-module.exports = constants
