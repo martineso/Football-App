@@ -9,7 +9,9 @@ var format = require('../utils/formatResponse');
 // Routes
 router.get('/:id', function (req, res, next) {
     getTeamDetails(req)
-      .then(response => res.json(response))
+      .then(response => {
+				res.json(response)
+			})
       .catch(err => res.status(400));
 });
 
@@ -22,11 +24,12 @@ router.get('/:id/fixtures', function(req, res, next) {
       .catch(err => res.status(400));
 });
 
-// Get crest img
-router.get('/:id/crestUrl', function(req, res, next) {
-    getTeamDetails(req)
-      .then(response => res.send(response.crestUrl))
-      .catch(err => res.status(400));
+router.get('/:id/players', function(req, res, next) {
+	var requestUrl = urljoin(footballApiUrl, `/teams/${req.params.id}/players`);
+
+	makeRequest(requestUrl)
+		.then(response => res.json(response))
+		.catch(err => res.status(400));
 });
 
 // Functions

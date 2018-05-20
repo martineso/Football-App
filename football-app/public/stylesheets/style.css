@@ -40,10 +40,16 @@
   }
 }
 
-#home {
+#home, 
+#team {
   padding: 20px 0;
 }
-
+#fixtures_playing {
+  background-color: aliceblue;
+}
+#fixtures_finished {
+  background-color: ghostwhite;
+}
 .fixture-date {
   font-size: 0.8em;
 }
@@ -56,4 +62,8 @@
 }
 .score.ht {
   font-size: 0.8em;
+}
+.crest-img {
+  width: 100px;
+  height: 100px;
 }

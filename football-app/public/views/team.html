@@ -1,1 +1,37 @@
-<p>TeamCtrl</p>
+<section id="team">
+    <div class="row">
+        <div class="col">
+            <div ng-show="loading">
+                <div class="loader"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" ng-show="!loading">
+        <!-- <div class="col">
+            <img class="mr-3 img-fluid img-thumbnail crest-img" 
+                ng-src="{{ team.crestUrl }}" 
+                alt="Team crest">
+        </div>
+        <div class="col">
+                <h5 class="mt-0">{{ team.name }}</h5>
+                <hr>
+        </div> -->
+        <div class="col">
+            <div class="media">
+                <img class="mr-3 img-fluid img-thumbnail crest-img" 
+                    ng-src="{{ team.crestUrl }}" 
+                    alt="Team crest">
+                <div class="media-body">
+                    <h5 class="mt-0">{{ team.name }}</h5>
+                    <hr>
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-secondary">Left</button>
+                            <button type="button" class="btn btn-secondary">Middle</button>
+                            <button type="button" class="btn btn-secondary">Right</button>
+                          </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
