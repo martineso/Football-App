@@ -1,0 +1,743 @@
+{
+    "_links": {
+        "self": {
+            "href": "http://api.football-data.org/v1/teams/107/fixtures"
+        },
+        "team": {
+            "href": "http://api.football-data.org/v1/teams/107"
+        }
+    },
+    "season": "2017",
+    "count": 38,
+    "fixtures": [{
+        "date": "2017-08-20T18:45:00Z",
+        "status": "FINISHED",
+        "matchday": 1,
+        "homeTeamName": "US Sassuolo Calcio",
+        "awayTeamName": "Genoa CFC",
+        "result": {
+            "goalsHomeTeam": 0,
+            "goalsAwayTeam": 0,
+            "halfTime": {
+                "goalsHomeTeam": 0,
+                "goalsAwayTeam": 0
+            }
+        },
+        "odds": null,
+        "homeTeamId": "471",
+        "awayTeamId": "107",
+        "competitionId": "456",
+        "fixtureId": "163905"
+    }, {
+        "date": "2017-08-26T16:00:00Z",
+        "status": "FINISHED",
+        "matchday": 2,
+        "homeTeamName": "Genoa CFC",
+        "awayTeamName": "Juventus Turin",
+        "result": {
+            "goalsHomeTeam": 2,
+            "goalsAwayTeam": 4,
+            "halfTime": {
+                "goalsHomeTeam": 2,
+                "goalsAwayTeam": 2
+            }
+        },
+        "odds": null,
+        "homeTeamId": "107",
+        "awayTeamId": "109",
+        "competitionId": "456",
+        "fixtureId": "163899"
+    }, {
+        "date": "2017-09-10T13:00:00Z",
+        "status": "FINISHED",
+        "matchday": 3,
+        "homeTeamName": "Udinese Calcio",
+        "awayTeamName": "Genoa CFC",
+        "result": {
+            "goalsHomeTeam": 1,
+            "goalsAwayTeam": 0,
+            "halfTime": {
+                "goalsHomeTeam": 1,
+                "goalsAwayTeam": 0
+            }
+        },
+        "odds": null,
+        "homeTeamId": "115",
+        "awayTeamId": "107",
+        "competitionId": "456",
+        "fixtureId": "163889"
+    }, {
+        "date": "2017-09-17T18:45:00Z",
+        "status": "FINISHED",
+        "matchday": 4,
+        "homeTeamName": "Genoa CFC",
+        "awayTeamName": "SS Lazio",
+        "result": {
+            "goalsHomeTeam": 2,
+            "goalsAwayTeam": 3,
+            "halfTime": {
+                "goalsHomeTeam": 0,
+                "goalsAwayTeam": 1
+            }
+        },
+        "odds": null,
+        "homeTeamId": "107",
+        "awayTeamId": "110",
+        "competitionId": "456",
+        "fixtureId": "163873"
+    }, {
+        "date": "2017-09-20T18:45:00Z",
+        "status": "FINISHED",
+        "matchday": 5,
+        "homeTeamName": "Genoa CFC",
+        "awayTeamName": "AC Chievo Verona",
+        "result": {
+            "goalsHomeTeam": 1,
+            "goalsAwayTeam": 1,
+            "halfTime": {
+                "goalsHomeTeam": 0,
+                "goalsAwayTeam": 0
+            }
+        },
+        "odds": null,
+        "homeTeamId": "107",
+        "awayTeamId": "106",
+        "competitionId": "456",
+        "fixtureId": "163864"
+    }, {
+        "date": "2017-09-24T13:00:00Z",
+        "status": "FINISHED",
+        "matchday": 6,
+        "homeTeamName": "FC Internazionale Milano",
+        "awayTeamName": "Genoa CFC",
+        "result": {
+            "goalsHomeTeam": 1,
+            "goalsAwayTeam": 0,
+            "halfTime": {
+                "goalsHomeTeam": 0,
+                "goalsAwayTeam": 0
+            }
+        },
+        "odds": null,
+        "homeTeamId": "108",
+        "awayTeamId": "107",
+        "competitionId": "456",
+        "fixtureId": "163854"
+    }, {
+        "date": "2017-09-30T18:45:00Z",
+        "status": "FINISHED",
+        "matchday": 7,
+        "homeTeamName": "Genoa CFC",
+        "awayTeamName": "Bologna FC",
+        "result": {
+            "goalsHomeTeam": 0,
+            "goalsAwayTeam": 1,
+            "halfTime": {
+                "goalsHomeTeam": 0,
+                "goalsAwayTeam": 0
+            }
+        },
+        "odds": null,
+        "homeTeamId": "107",
+        "awayTeamId": "103",
+        "competitionId": "456",
+        "fixtureId": "163843"
+    }, {
+        "date": "2017-10-15T13:00:00Z",
+        "status": "FINISHED",
+        "matchday": 8,
+        "homeTeamName": "Cagliari Calcio",
+        "awayTeamName": "Genoa CFC",
+        "result": {
+            "goalsHomeTeam": 2,
+            "goalsAwayTeam": 3,
+            "halfTime": {
+                "goalsHomeTeam": 0,
+                "goalsAwayTeam": 2
+            }
+        },
+        "odds": null,
+        "homeTeamId": "104",
+        "awayTeamId": "107",
+        "competitionId": "456",
+        "fixtureId": "163831"
+    }, {
+        "date": "2017-10-22T13:00:00Z",
+        "status": "FINISHED",
+        "matchday": 9,
+        "homeTeamName": "AC Milan",
+        "awayTeamName": "Genoa CFC",
+        "result": {
+            "goalsHomeTeam": 0,
+            "goalsAwayTeam": 0,
+            "halfTime": {
+                "goalsHomeTeam": 0,
+                "goalsAwayTeam": 0
+            }
+        },
+        "odds": null,
+        "homeTeamId": "98",
+        "awayTeamId": "107",
+        "competitionId": "456",
+        "fixtureId": "163824"
+    }, {
+        "date": "2017-10-25T18:45:00Z",
+        "status": "FINISHED",
+        "matchday": 10,
+        "homeTeamName": "Genoa CFC",
+        "awayTeamName": "SSC Napoli",
+        "result": {
+            "goalsHomeTeam": 2,
+            "goalsAwayTeam": 3,
+            "halfTime": {
+                "goalsHomeTeam": 1,
+                "goalsAwayTeam": 2
+            }
+        },
+        "odds": null,
+        "homeTeamId": "107",
+        "awayTeamId": "113",
+        "competitionId": "456",
+        "fixtureId": "163815"
+    }, {
+        "date": "2017-10-29T15:00:00Z",
+        "status": "FINISHED",
+        "matchday": 11,
+        "homeTeamName": "SPAL Ferrara",
+        "awayTeamName": "Genoa CFC",
+        "result": {
+            "goalsHomeTeam": 1,
+            "goalsAwayTeam": 0,
+            "halfTime": {
+                "goalsHomeTeam": 0,
+                "goalsAwayTeam": 0
+            }
+        },
+        "odds": null,
+        "homeTeamId": "1107",
+        "awayTeamId": "107",
+        "competitionId": "456",
+        "fixtureId": "163807"
+    }, {
+        "date": "2017-11-04T20:45:00Z",
+        "status": "FINISHED",
+        "matchday": 12,
+        "homeTeamName": "Genoa CFC",
+        "awayTeamName": "UC Sampdoria",
+        "result": {
+            "goalsHomeTeam": 0,
+            "goalsAwayTeam": 2,
+            "halfTime": {
+                "goalsHomeTeam": 0,
+                "goalsAwayTeam": 1
+            }
+        },
+        "odds": null,
+        "homeTeamId": "107",
+        "awayTeamId": "584",
+        "competitionId": "456",
+        "fixtureId": "163795"
+    }, {
+        "date": "2017-11-19T12:30:00Z",
+        "status": "FINISHED",
+        "matchday": 13,
+        "homeTeamName": "FC Crotone",
+        "awayTeamName": "Genoa CFC",
+        "result": {
+            "goalsHomeTeam": 0,
+            "goalsAwayTeam": 1,
+            "halfTime": {
+                "goalsHomeTeam": 0,
+                "goalsAwayTeam": 1
+            }
+        },
+        "odds": null,
+        "homeTeamId": "472",
+        "awayTeamId": "107",
+        "competitionId": "456",
+        "fixtureId": "163781"
+    }, {
+        "date": "2017-11-26T15:00:00Z",
+        "status": "FINISHED",
+        "matchday": 14,
+        "homeTeamName": "Genoa CFC",
+        "awayTeamName": "AS Roma",
+        "result": {
+            "goalsHomeTeam": 1,
+            "goalsAwayTeam": 1,
+            "halfTime": {
+                "goalsHomeTeam": 0,
+                "goalsAwayTeam": 0
+            }
+        },
+        "odds": null,
+        "homeTeamId": "107",
+        "awayTeamId": "100",
+        "competitionId": "456",
+        "fixtureId": "163774"
+    }, {
+        "date": "2017-12-04T21:00:00Z",
+        "status": "FINISHED",
+        "matchday": 15,
+        "homeTeamName": "Hellas Verona FC",
+        "awayTeamName": "Genoa CFC",
+        "result": {
+            "goalsHomeTeam": 0,
+            "goalsAwayTeam": 1,
+            "halfTime": {
+                "goalsHomeTeam": 0,
+                "goalsAwayTeam": 1
+            }
+        },
+        "odds": null,
+        "homeTeamId": "450",
+        "awayTeamId": "107",
+        "competitionId": "456",
+        "fixtureId": "163764"
+    }, {
+        "date": "2017-12-12T19:00:00Z",
+        "status": "FINISHED",
+        "matchday": 16,
+        "homeTeamName": "Genoa CFC",
+        "awayTeamName": "Atalanta BC",
+        "result": {
+            "goalsHomeTeam": 1,
+            "goalsAwayTeam": 2,
+            "halfTime": {
+                "goalsHomeTeam": 1,
+                "goalsAwayTeam": 1
+            }
+        },
+        "odds": {
+            "homeWin": 2.95,
+            "draw": 3.3,
+            "awayWin": 2.25
+        },
+        "homeTeamId": "107",
+        "awayTeamId": "102",
+        "competitionId": "456",
+        "fixtureId": "163752"
+    }, {
+        "date": "2017-12-17T15:00:00Z",
+        "status": "FINISHED",
+        "matchday": 17,
+        "homeTeamName": "ACF Fiorentina",
+        "awayTeamName": "Genoa CFC",
+        "result": {
+            "goalsHomeTeam": 0,
+            "goalsAwayTeam": 0,
+            "halfTime": {
+                "goalsHomeTeam": 0,
+                "goalsAwayTeam": 0
+            }
+        },
+        "odds": null,
+        "homeTeamId": "99",
+        "awayTeamId": "107",
+        "competitionId": "456",
+        "fixtureId": "163744"
+    }, {
+        "date": "2017-12-23T15:00:00Z",
+        "status": "FINISHED",
+        "matchday": 18,
+        "homeTeamName": "Genoa CFC",
+        "awayTeamName": "Benevento Calcio",
+        "result": {
+            "goalsHomeTeam": 1,
+            "goalsAwayTeam": 0,
+            "halfTime": {
+                "goalsHomeTeam": 0,
+                "goalsAwayTeam": 0
+            }
+        },
+        "odds": null,
+        "homeTeamId": "107",
+        "awayTeamId": "1106",
+        "competitionId": "456",
+        "fixtureId": "163732"
+    }, {
+        "date": "2017-12-30T14:00:00Z",
+        "status": "FINISHED",
+        "matchday": 19,
+        "homeTeamName": "Torino FC",
+        "awayTeamName": "Genoa CFC",
+        "result": {
+            "goalsHomeTeam": 0,
+            "goalsAwayTeam": 0,
+            "halfTime": {
+                "goalsHomeTeam": 0,
+                "goalsAwayTeam": 0
+            }
+        },
+        "odds": {
+            "homeWin": 1.7,
+            "draw": 3.5,
+            "awayWin": 4.6
+        },
+        "homeTeamId": "586",
+        "awayTeamId": "107",
+        "competitionId": "456",
+        "fixtureId": "163729"
+    }, {
+        "date": "2018-01-06T14:00:00Z",
+        "status": "FINISHED",
+        "matchday": 20,
+        "homeTeamName": "Genoa CFC",
+        "awayTeamName": "US Sassuolo Calcio",
+        "result": {
+            "goalsHomeTeam": 1,
+            "goalsAwayTeam": 0,
+            "halfTime": {
+                "goalsHomeTeam": 0,
+                "goalsAwayTeam": 0
+            }
+        },
+        "odds": null,
+        "homeTeamId": "107",
+        "awayTeamId": "471",
+        "competitionId": "456",
+        "fixtureId": "163714"
+    }, {
+        "date": "2018-01-22T19:45:00Z",
+        "status": "FINISHED",
+        "matchday": 21,
+        "homeTeamName": "Juventus Turin",
+        "awayTeamName": "Genoa CFC",
+        "result": {
+            "goalsHomeTeam": 1,
+            "goalsAwayTeam": 0,
+            "halfTime": {
+                "goalsHomeTeam": 1,
+                "goalsAwayTeam": 0
+            }
+        },
+        "odds": null,
+        "homeTeamId": "109",
+        "awayTeamId": "107",
+        "competitionId": "456",
+        "fixtureId": "163705"
+    }, {
+        "date": "2018-01-28T14:00:00Z",
+        "status": "FINISHED",
+        "matchday": 22,
+        "homeTeamName": "Genoa CFC",
+        "awayTeamName": "Udinese Calcio",
+        "result": {
+            "goalsHomeTeam": 0,
+            "goalsAwayTeam": 1,
+            "halfTime": {
+                "goalsHomeTeam": 0,
+                "goalsAwayTeam": 0
+            }
+        },
+        "odds": null,
+        "homeTeamId": "107",
+        "awayTeamId": "115",
+        "competitionId": "456",
+        "fixtureId": "163693"
+    }, {
+        "date": "2018-02-05T19:45:00Z",
+        "status": "FINISHED",
+        "matchday": 23,
+        "homeTeamName": "SS Lazio",
+        "awayTeamName": "Genoa CFC",
+        "result": {
+            "goalsHomeTeam": 1,
+            "goalsAwayTeam": 2,
+            "halfTime": {
+                "goalsHomeTeam": 0,
+                "goalsAwayTeam": 0
+            }
+        },
+        "odds": null,
+        "homeTeamId": "110",
+        "awayTeamId": "107",
+        "competitionId": "456",
+        "fixtureId": "163687"
+    }, {
+        "date": "2018-02-11T14:00:00Z",
+        "status": "FINISHED",
+        "matchday": 24,
+        "homeTeamName": "AC Chievo Verona",
+        "awayTeamName": "Genoa CFC",
+        "result": {
+            "goalsHomeTeam": 0,
+            "goalsAwayTeam": 1,
+            "halfTime": {
+                "goalsHomeTeam": 0,
+                "goalsAwayTeam": 0
+            }
+        },
+        "odds": null,
+        "homeTeamId": "106",
+        "awayTeamId": "107",
+        "competitionId": "456",
+        "fixtureId": "163670"
+    }, {
+        "date": "2018-02-17T19:45:00Z",
+        "status": "FINISHED",
+        "matchday": 25,
+        "homeTeamName": "Genoa CFC",
+        "awayTeamName": "FC Internazionale Milano",
+        "result": {
+            "goalsHomeTeam": 2,
+            "goalsAwayTeam": 0,
+            "halfTime": {
+                "goalsHomeTeam": 1,
+                "goalsAwayTeam": 0
+            }
+        },
+        "odds": null,
+        "homeTeamId": "107",
+        "awayTeamId": "108",
+        "competitionId": "456",
+        "fixtureId": "163664"
+    }, {
+        "date": "2018-02-24T17:00:00Z",
+        "status": "FINISHED",
+        "matchday": 26,
+        "homeTeamName": "Bologna FC",
+        "awayTeamName": "Genoa CFC",
+        "result": {
+            "goalsHomeTeam": 2,
+            "goalsAwayTeam": 0,
+            "halfTime": {
+                "goalsHomeTeam": 0,
+                "goalsAwayTeam": 0
+            }
+        },
+        "odds": null,
+        "homeTeamId": "103",
+        "awayTeamId": "107",
+        "competitionId": "456",
+        "fixtureId": "163650"
+    }, {
+        "date": "2018-03-11T17:00:00Z",
+        "status": "FINISHED",
+        "matchday": 28,
+        "homeTeamName": "Genoa CFC",
+        "awayTeamName": "AC Milan",
+        "result": {
+            "goalsHomeTeam": 0,
+            "goalsAwayTeam": 1,
+            "halfTime": {
+                "goalsHomeTeam": 0,
+                "goalsAwayTeam": 0
+            }
+        },
+        "odds": null,
+        "homeTeamId": "107",
+        "awayTeamId": "98",
+        "competitionId": "456",
+        "fixtureId": "163634"
+    }, {
+        "date": "2018-03-18T19:45:00Z",
+        "status": "FINISHED",
+        "matchday": 29,
+        "homeTeamName": "SSC Napoli",
+        "awayTeamName": "Genoa CFC",
+        "result": {
+            "goalsHomeTeam": 1,
+            "goalsAwayTeam": 0,
+            "halfTime": {
+                "goalsHomeTeam": 0,
+                "goalsAwayTeam": 0
+            }
+        },
+        "odds": null,
+        "homeTeamId": "113",
+        "awayTeamId": "107",
+        "competitionId": "456",
+        "fixtureId": "163625"
+    }, {
+        "date": "2018-03-31T13:00:00Z",
+        "status": "FINISHED",
+        "matchday": 30,
+        "homeTeamName": "Genoa CFC",
+        "awayTeamName": "SPAL Ferrara",
+        "result": {
+            "goalsHomeTeam": 1,
+            "goalsAwayTeam": 1,
+            "halfTime": {
+                "goalsHomeTeam": 1,
+                "goalsAwayTeam": 0
+            }
+        },
+        "odds": null,
+        "homeTeamId": "107",
+        "awayTeamId": "1107",
+        "competitionId": "456",
+        "fixtureId": "163615"
+    }, {
+        "date": "2018-04-03T16:30:00Z",
+        "status": "FINISHED",
+        "matchday": 27,
+        "homeTeamName": "Genoa CFC",
+        "awayTeamName": "Cagliari Calcio",
+        "result": {
+            "goalsHomeTeam": 2,
+            "goalsAwayTeam": 1,
+            "halfTime": {
+                "goalsHomeTeam": 0,
+                "goalsAwayTeam": 0
+            }
+        },
+        "odds": null,
+        "homeTeamId": "107",
+        "awayTeamId": "104",
+        "competitionId": "456",
+        "fixtureId": "163643"
+    }, {
+        "date": "2018-04-07T18:45:00Z",
+        "status": "FINISHED",
+        "matchday": 31,
+        "homeTeamName": "UC Sampdoria",
+        "awayTeamName": "Genoa CFC",
+        "result": {
+            "goalsHomeTeam": 0,
+            "goalsAwayTeam": 0,
+            "halfTime": {
+                "goalsHomeTeam": 0,
+                "goalsAwayTeam": 0
+            }
+        },
+        "odds": null,
+        "homeTeamId": "584",
+        "awayTeamId": "107",
+        "competitionId": "456",
+        "fixtureId": "163606"
+    }, {
+        "date": "2018-04-14T16:00:00Z",
+        "status": "FINISHED",
+        "matchday": 32,
+        "homeTeamName": "Genoa CFC",
+        "awayTeamName": "FC Crotone",
+        "result": {
+            "goalsHomeTeam": 1,
+            "goalsAwayTeam": 0,
+            "halfTime": {
+                "goalsHomeTeam": 1,
+                "goalsAwayTeam": 0
+            }
+        },
+        "odds": null,
+        "homeTeamId": "107",
+        "awayTeamId": "472",
+        "competitionId": "456",
+        "fixtureId": "163595"
+    }, {
+        "date": "2018-04-18T18:45:00Z",
+        "status": "FINISHED",
+        "matchday": 33,
+        "homeTeamName": "AS Roma",
+        "awayTeamName": "Genoa CFC",
+        "result": {
+            "goalsHomeTeam": 2,
+            "goalsAwayTeam": 1,
+            "halfTime": {
+                "goalsHomeTeam": 1,
+                "goalsAwayTeam": 0
+            }
+        },
+        "odds": null,
+        "homeTeamId": "100",
+        "awayTeamId": "107",
+        "competitionId": "456",
+        "fixtureId": "163586"
+    }, {
+        "date": "2018-04-23T18:45:00Z",
+        "status": "FINISHED",
+        "matchday": 34,
+        "homeTeamName": "Genoa CFC",
+        "awayTeamName": "Hellas Verona FC",
+        "result": {
+            "goalsHomeTeam": 3,
+            "goalsAwayTeam": 1,
+            "halfTime": {
+                "goalsHomeTeam": 1,
+                "goalsAwayTeam": 0
+            }
+        },
+        "odds": null,
+        "homeTeamId": "107",
+        "awayTeamId": "450",
+        "competitionId": "456",
+        "fixtureId": "163573"
+    }, {
+        "date": "2018-04-29T13:00:00Z",
+        "status": "FINISHED",
+        "matchday": 35,
+        "homeTeamName": "Atalanta BC",
+        "awayTeamName": "Genoa CFC",
+        "result": {
+            "goalsHomeTeam": 3,
+            "goalsAwayTeam": 1,
+            "halfTime": {
+                "goalsHomeTeam": 2,
+                "goalsAwayTeam": 0
+            }
+        },
+        "odds": null,
+        "homeTeamId": "102",
+        "awayTeamId": "107",
+        "competitionId": "456",
+        "fixtureId": "163560"
+    }, {
+        "date": "2018-05-06T13:00:00Z",
+        "status": "FINISHED",
+        "matchday": 36,
+        "homeTeamName": "Genoa CFC",
+        "awayTeamName": "ACF Fiorentina",
+        "result": {
+            "goalsHomeTeam": 2,
+            "goalsAwayTeam": 3,
+            "halfTime": {
+                "goalsHomeTeam": 0,
+                "goalsAwayTeam": 1
+            }
+        },
+        "odds": null,
+        "homeTeamId": "107",
+        "awayTeamId": "99",
+        "competitionId": "456",
+        "fixtureId": "163552"
+    }, {
+        "date": "2018-05-13T13:00:00Z",
+        "status": "FINISHED",
+        "matchday": 37,
+        "homeTeamName": "Benevento Calcio",
+        "awayTeamName": "Genoa CFC",
+        "result": {
+            "goalsHomeTeam": 1,
+            "goalsAwayTeam": 0,
+            "halfTime": {
+                "goalsHomeTeam": 0,
+                "goalsAwayTeam": 0
+            }
+        },
+        "odds": null,
+        "homeTeamId": "1106",
+        "awayTeamId": "107",
+        "competitionId": "456",
+        "fixtureId": "163541"
+    }, {
+        "date": "2018-05-20T13:00:00Z",
+        "status": "FINISHED",
+        "matchday": 38,
+        "homeTeamName": "Genoa CFC",
+        "awayTeamName": "Torino FC",
+        "result": {
+            "goalsHomeTeam": 1,
+            "goalsAwayTeam": 2,
+            "halfTime": {
+                "goalsHomeTeam": 0,
+                "goalsAwayTeam": 1
+            }
+        },
+        "odds": null,
+        "homeTeamId": "107",
+        "awayTeamId": "586",
+        "competitionId": "456",
+        "fixtureId": "163532"
+    }]
+}

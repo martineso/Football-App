@@ -1,0 +1,18 @@
+{
+    "_links": {
+        "self": {
+            "href": "http://api.football-data.org/v1/teams/107"
+        },
+        "fixtures": {
+            "href": "http://api.football-data.org/v1/teams/107/fixtures"
+        },
+        "players": {
+            "href": "http://api.football-data.org/v1/teams/107/players"
+        }
+    },
+    "name": "Genoa CFC",
+    "code": "CFC",
+    "shortName": "Genoa",
+    "squadMarketValue": null,
+    "crestUrl": "http://upload.wikimedia.org/wikipedia/de/7/76/Genoa_CFC.svg"
+}

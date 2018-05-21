@@ -9,9 +9,7 @@ var format = require('../utils/formatResponse');
 // Routes
 router.get('/:id', function (req, res, next) {
     getTeamDetails(req)
-      .then(response => {
-				res.json(response)
-			})
+      .then(response => res.json(response))
       .catch(err => res.status(400));
 });
 
@@ -20,7 +18,10 @@ router.get('/:id/fixtures', function(req, res, next) {
     var requestUrl = urljoin(footballApiUrl, `/teams/${req.params.id}/fixtures`);
   
     makeRequest(requestUrl)
-      .then(response => res.json(response))
+      .then(response => {
+        let formatted = format.formatFixturesResponse(response);
+        return res.json(formatted);
+      })
       .catch(err => res.status(400));
 });
 

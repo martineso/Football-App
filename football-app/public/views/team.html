@@ -25,8 +25,8 @@
                                 aria-selected="false">Fixtures</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-item nav-link" id="nav-league-table-tab" target="_self" data-toggle="pill" href="#nav-league-table" role="tab"
-                                aria-controls="nav-league-table" aria-selected="false">League table</a>
+                            <a class="nav-item nav-link disabled" id="nav-league-table-tab" target="_self" data-toggle="pill" href="#nav-league-table"
+                                role="tab" aria-controls="nav-league-table" aria-selected="false">League table</a>
                         </li>
                     </ul>
                 </div>
@@ -37,8 +37,15 @@
     <div class="row tab-content-row">
         <div class="tab-content col" id="nav-tabContent">
             <!-- Players tab -->
-            <div class="tab-pane fade show active" id="nav-players" role="tabpanel" aria-labelledby="nav-players-tab" ng-hide="playersLoading">
-                <table class="table table-striped table-sm">
+            <div class="tab-pane fade show active" id="nav-players" role="tabpanel" aria-labelledby="nav-players-tab">
+                <div class="row">
+                    <div class="col">
+                        <div ng-show="playersLoading">
+                            <div class="loader"></div>
+                        </div>
+                    </div>
+                </div>
+                <table class="table table-striped table-sm" ng-hide="playersLoading">
                     <thead>
                         <tr>
                             <th scope="col">#</th>
@@ -67,12 +74,156 @@
 
             <!-- Fixtures tab -->
             <div class="tab-pane fade" id="nav-fixtures" role="tabpanel" aria-labelledby="nav-fixtures-tab">
+                <div class="row">
+                    <div class="col">
+                        <div ng-show="fixturesLoading">
+                            <div class="loader"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" ng-hide="fixturesLoading">
+                    <div class="col">
+                        <h5>Season:
+                            <span class="font-weight-bold">{{fixturesSeason}}</span>
+                        </h5>
+                    </div>
+                </div>
+
+                <!-- Currently playing -->
+                <div class="row" ng-hide="fixturesLoading || fixtures.fixturesInPlay.length === 0">
+                    <div class="col">
+                        <h2>Currently playing</h2>
+                        <hr>
+
+                        <div id="fixtures_playing">
+                            <div class="row" ng-repeat="fixture in fixtures.fixturesInPlay">
+                                <span class="text-black-50 text-center fixture-date col">Started at {{formatDate(fixture.date, 'playing')}}</span>
+                                <div class="w-100"></div>
+                                <div class="col text-right team-score-col">
+                                    <a ng-href="#!/team/{{fixture.homeTeamId}}">{{fixture.homeTeamName}}</a>
+                                    <span class="score">{{fixture.result.goalsHomeTeam}}</span>
+                                </div>
+                                <span class="col-md-auto col-sm-auto col-auto score-sep"> - </span>
+                                <div class="col text-left team-score-col">
+                                    <span class="score">{{fixture.result.goalsAwayTeam}}</span>
+                                    <a ng-href="#!/team/{{fixture.awayTeamId}}">{{fixture.awayTeamName}}</a>
+                                </div>
+                                <div class="w-100"></div>
+                                <!-- Half Time -->
+                                <div class="col text-right team-score-col" ng-if="fixture.result.halfTime">
+                                    <span class="text-black-50 text-center fixture-date col">Half time:</span>
+                                    <span class="score ht text-muted">{{fixture.result.halfTime.goalsHomeTeam}}</span>
+                                </div>
+                                <span class="col-md-auto col-sm-auto col-auto score-sep" ng-if="fixture.result.halfTime"> - </span>
+                                <div class="col text-left team-score-col" ng-if="fixture.result.halfTime">
+                                    <span class="score ht text-muted">{{fixture.result.halfTime.goalsAwayTeam}}</span>
+                                </div>
+                                <!-- Extra Time -->
+                                <div class="col text-right team-score-col" ng-if="fixture.result.extraTime">
+                                    <span class="text-black-50 text-center fixture-date col">Extra time:</span>
+                                    <span class="score ht text-muted">{{fixture.result.extraTime.goalsHomeTeam}}</span>
+                                </div>
+                                <span class="col-md-auto col-sm-auto col-auto score-sep" ng-if="fixture.result.extraTime"> - </span>
+                                <div class="col text-left team-score-col" ng-if="fixture.result.extraTime">
+                                    <span class="score ht text-muted">{{fixture.result.extraTime.goalsAwayTeam}}</span>
+                                </div>
+                                <!-- Penalties -->
+                                <div class="col text-right team-score-col" ng-if="fixture.result.penaltyShootout">
+                                    <span class="text-black-50 text-center fixture-date col">Penalty shootout:</span>
+                                    <span class="score ht text-muted">{{fixture.result.penaltyShootout.goalsHomeTeam}}</span>
+                                </div>
+                                <span class="col-md-auto col-sm-auto col-auto score-sep" ng-if="fixture.result.penaltyShootout"> - </span>
+                                <div class="col text-left team-score-col" ng-if="fixture.result.penaltyShootout">
+                                    <span class="score ht text-muted">{{fixture.result.penaltyShootout.goalsAwayTeam}}</span>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Upcoming -->
+                <div class="row" ng-hide="fixturesLoading || fixtures.fixturesUpcoming.length === 0">
+                    <div class="col">
+                        <h2>Upcoming</h2>
+                        <hr>
+
+                        <div id="fixtures_upcoming">
+                            <div class="row" ng-repeat="fixture in fixtures.fixturesUpcoming">
+                                <span class="text-black-50 text-center fixture-date col">Starts on {{formatDate(fixture.date)}}</span>
+                                <div class="w-100"></div>
+                                <div class="col text-right team-score-col">
+                                    <a ng-href="#!/team/{{fixture.homeTeamId}}">{{fixture.homeTeamName}}</a>
+                                    <!-- <span class="score">{{fixture.result.goalsHomeTeam}}</span> -->
+                                </div>
+                                <span class="col-md-auto col-sm-auto col-auto score-sep"> vs </span>
+                                <div class="col text-left team-score-col">
+                                    <!-- <span class="score">{{fixture.result.goalsAwayTeam}}</span> -->
+                                    <a ng-href="#!/team/{{fixture.awayTeamId}}">{{fixture.awayTeamName}}</a>
+                                </div>
+                                <div class="w-100"></div>
+                                <hr class="col">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Played -->
+                <div class="row" ng-hide="fixturesLoading || fixtures.fixturesFinished.length === 0">
+                    <div class="col">
+                        <h2>Finished</h2>
+                        <hr>
+
+                        <div id="fixtures_finished">
+                            <div class="row" ng-repeat="fixture in fixtures.fixturesFinished">
+                                <span class="text-black-50 text-center fixture-date col">Played on {{formatDate(fixture.date, 'finished')}}</span>
+                                <div class="w-100"></div>
+                                <div class="col text-right team-score-col">
+                                    <a ng-href="#!/team/{{fixture.homeTeamId}}">{{fixture.homeTeamName}}</a>
+                                    <span class="score">{{fixture.result.goalsHomeTeam}}</span>
+                                </div>
+                                <span class="col-md-auto col-sm-auto col-auto score-sep"> - </span>
+                                <div class="col text-left team-score-col">
+                                    <span class="score">{{fixture.result.goalsAwayTeam}}</span>
+                                    <a ng-href="#!/team/{{fixture.awayTeamId}}">{{fixture.awayTeamName}}</a>
+                                </div>
+                                <div class="w-100"></div>
+                                <!-- Half Time -->
+                                <div class="col text-right team-score-col">
+                                    <span class="text-black-50 text-center fixture-date col">Half time:</span>
+                                    <span class="score ht text-muted">{{fixture.result.halfTime.goalsHomeTeam}}</span>
+                                </div>
+                                <span class="col-md-auto col-sm-auto col-auto score-sep"> - </span>
+                                <div class="col text-left team-score-col">
+                                    <span class="score ht text-muted">{{fixture.result.halfTime.goalsAwayTeam}}</span>
+                                </div>
+                                <!-- Extra Time -->
+                                <div class="col text-right team-score-col" ng-if="fixture.result.extraTime">
+                                    <span class="text-black-50 text-center fixture-date col">Extra time:</span>
+                                    <span class="score ht text-muted">{{fixture.result.extraTime.goalsHomeTeam}}</span>
+                                </div>
+                                <span class="col-md-auto col-sm-auto col-auto score-sep" ng-if="fixture.result.extraTime"> - </span>
+                                <div class="col text-left team-score-col" ng-if="fixture.result.extraTime">
+                                    <span class="score ht text-muted">{{fixture.result.extraTime.goalsAwayTeam}}</span>
+                                </div>
+                                <!-- Penalties -->
+                                <div class="col text-right team-score-col" ng-if="fixture.result.penaltyShootout">
+                                    <span class="text-black-50 text-center fixture-date col">Penalty shootout:</span>
+                                    <span class="score ht text-muted">{{fixture.result.penaltyShootout.goalsHomeTeam}}</span>
+                                </div>
+                                <span class="col-md-auto col-sm-auto col-auto score-sep" ng-if="fixture.result.penaltyShootout"> - </span>
+                                <div class="col text-left team-score-col" ng-if="fixture.result.penaltyShootout">
+                                    <span class="score ht text-muted">{{fixture.result.penaltyShootout.goalsAwayTeam}}</span>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
             <!-- League table tab -->
             <div class="tab-pane fade" id="nav-league-table" role="tabpanel" aria-labelledby="nav-league-table-tab">
-
             </div>
         </div>
     </div>
