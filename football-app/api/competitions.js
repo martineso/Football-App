@@ -34,7 +34,10 @@ router.get('/:id/fixtures', function(req, res, next) {
   var requestUrl = urljoin(footballApiUrl, req.originalUrl);
 
   makeRequest(requestUrl)
-    .then(response => res.json(response))
+    .then(response => {
+      let formatted = format.formatFixturesResponse(response);
+      return res.json(formatted);
+    })
     .catch(err => res.status(400));
 });
 

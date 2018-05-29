@@ -4,7 +4,7 @@
         $scope.formatDate = formatDate;
     
         $scope.loading = true;
-        $http.get('/fixtures')
+        $http.get('/competitions/467/fixtures')
             .then(function(response) {
                 console.log(response)
                 var data = response.data;

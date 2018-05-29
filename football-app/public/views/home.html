@@ -7,9 +7,14 @@
             </div>
         </div>
         <div class="row" ng-hide="loading || !fixtures">
-                        <span class="text-black-50 text-center fixture-date col">
+                    <!-- <span class="text-black-50 text-center fixture-date col">
                             Showing results for {{formatDate(fixtures.timeFrameStart, 'dateOnly')}} - {{formatDate(fixtures.timeFrameEnd, 'dateOnly')}}
-                    </span>
+                    </span> -->
+                    <h1 class="col text-center">WORLD CUP 2018 RUSSIA</h1>
+                    <div class="w-100"></div>
+                    <div class="col" ng-show="!loading && fixtures.fixturesInPlay.length === 0 && fixtures.fixturesFinished.length === 0 && fixtures.fixturesUpcoming.length === 0"" ">
+                        <p class="text-lg-center">No games for the selected period!</p>
+                    </div>
             </div>
 
         <div class="row" ng-hide="loading || fixtures.fixturesInPlay.length === 0">
